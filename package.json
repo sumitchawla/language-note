@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "description": "A simple highlighting scheme for daily note files.",
   "keywords": [],
-  "repository": "https://github.com/mkdillard/language-note",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkdillard/language-note.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
