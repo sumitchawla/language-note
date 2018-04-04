@@ -1,11 +1,11 @@
 {
   "name": "language-note",
   "main": "./lib/language-note",
-  "version": "0.1.0",
-  "description": "A simple highlighting scheme for daily notes.",
+  "version": "0.0.0",
+  "description": "A simple highlighting scheme for daily note files.",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/language-note",
+  "repository": "https://github.com/mkdillard/language-note",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
