@@ -1,0 +1,15 @@
+{
+  "name": "language-note",
+  "main": "./lib/language-note",
+  "version": "0.1.0",
+  "description": "A simple highlighting scheme for daily notes.",
+  "keywords": [
+  ],
+  "repository": "https://github.com/atom/language-note",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

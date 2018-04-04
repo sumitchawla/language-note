@@ -1,0 +1,61 @@
+# TextMate tutorial: http://manual.macromates.com/en/language_grammars
+
+# Regex to convert keys to unquoted: '(include|'match'|'captures'|begin|end|begin'captures'|end'captures'|'name'|patterns|0|'1'|'2'|3|4|5|6|7|8|9|comment|fileTypes|scope'name'|repository|content'name'|firstLine'match'|foldingStartMarker|foldingStopMarker)':
+
+'scopeName': 'source.note' # <scope> should be a short, unique indicator for the language ("js", "php", "c", etc.)
+'name': 'Daily_Notes' # The title that will show up in grammar selection and on your status bar.
+'fileTypes': [ # An array of file extensions.
+  'note'
+]
+
+'patterns': [ # An array of individual pattern declarations.
+  {
+    'match': '(DATE):\\s*([^\\n]*)'
+    'name': 'date.note'
+    'captures':
+      '1': 'name': 'section_key.note'
+      '2': 'name': 'date_value.note'
+  }
+  {
+    'match': '(HOURS):\\s*([^\\n]*)'
+    'name': 'hours.note'
+    'captures':
+      '1': 'name': 'section_key.note'
+      '2': 'name': 'hours_value.note'
+  }
+  {
+    'match': '(INCIDENT):\\s*([^\\n]*)'
+    'name': 'tags.note'
+    'captures':
+      '1': 'name': 'section_key.note'
+      '2': 'name': 'incident_value.note'
+  }
+  {
+    'match': '(MEETING):\\s*([^\\n]*)'
+    'name': 'hours.note'
+    'captures':
+      '1': 'name': 'section_key.note'
+      '2': 'name': 'meeting_value.note'
+  }
+  {
+    'match': '(TAGS):\\s*([^\\n]*)'
+    'name': 'tags.note'
+    'captures':
+      '1': 'name': 'section_key.note'
+      '2': 'name': 'tags_value.note'
+  }
+  {
+    'match': '(TASK):\\s*([^\\n]*)'
+    'name': 'task.note'
+    'captures':
+      '1': 'name': 'section_key.note'
+      '2': 'name': 'task_value.note'
+  }
+  {
+    'match': '(TODO):\\s*([^\\n]*)'
+    'name': 'todo.note'
+    'captures':
+      '1': 'name': 'section_key.note'
+      '2': 'name': 'todo_value.note'
+  }
+]
