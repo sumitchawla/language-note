@@ -1,7 +1,7 @@
 {
   "name": "language-note",
   "main": "./lib/language-note",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A simple highlighting scheme for daily note files.",
   "keywords": [],
   "repository": {
