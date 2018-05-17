@@ -25,10 +25,17 @@
   }
   {
     'match': '(INCIDENT):\\s*([^\\n]*)'
-    'name': 'tags.note'
+    'name': 'incident.note'
     'captures':
       '1': 'name': 'section_key.note'
       '2': 'name': 'incident_value.note'
+  }
+  {
+    'match': '(INFO):\\s*([^\\n]*)'
+    'name': 'info.note'
+    'captures':
+      '1': 'name': 'section_key.note'
+      '2': 'name': 'info_value.note'
   }
   {
     'match': '(MEETING):\\s*([^\\n]*)'
