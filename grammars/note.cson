@@ -65,4 +65,11 @@
       '1': 'name': 'section_key.note'
       '2': 'name': 'todo_value.note'
   }
+  {
+    'match': '(CHECK):\\s*([^\\n]*)'
+    'name': 'check.note'
+    'captures':
+      '1': 'name': 'checklist_value.note'
+      '2': 'name': 'checklist_value.note'
+  }
 ]
