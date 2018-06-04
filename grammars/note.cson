@@ -72,4 +72,16 @@
       '1': 'name': 'checklist_value.note'
       '2': 'name': 'checklist_value.note'
   }
+  {
+    'match': 'CHECK.*(INCOMPLETE)$'
+    'name': 'incomplete.check.note'
+    'captures':
+      '1': 'name': 'checklist_incomplete.note'
+  }
+  {
+    'match': 'CHECK.*(COMPLETE)$'
+    'name': 'incomplete.check.note'
+    'captures':
+      '1': 'name': 'checklist_complete.note'
+  }
 ]
