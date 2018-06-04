@@ -66,22 +66,12 @@
       '2': 'name': 'todo_value.note'
   }
   {
-    'match': '(CHECK):\\s*([^\\n]*)'
+    'match': '(CHECK):\\s*(.*)\\s*[(INCOMPLETE)|(COMPLETE)]$'
     'name': 'check.note'
     'captures':
       '1': 'name': 'checklist_value.note'
       '2': 'name': 'checklist_value.note'
-  }
-  {
-    'match': 'CHECK.*(INCOMPLETE)$'
-    'name': 'incomplete.check.note'
-    'captures':
-      '1': 'name': 'checklist_incomplete.note'
-  }
-  {
-    'match': 'CHECK.*(COMPLETE)$'
-    'name': 'incomplete.check.note'
-    'captures':
-      '1': 'name': 'checklist_complete.note'
+      '3': 'name': 'checklist_incomplete.note'
+      '4': 'name': 'checklist_complete.note'
   }
 ]
