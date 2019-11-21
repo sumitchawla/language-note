@@ -6,11 +6,16 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mkdillard/language-note.git"
+    "url": "https://github.com/sumitchawla/language-note.git"
   },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "apmInstallSource": {
+    "type": "git",
+    "source": "https://github.com/sumitchawla/language-note",
+    "sha": "dec43ee01b9db147ce9c7fbb2e2533a1d53d5b58"
+  }
 }

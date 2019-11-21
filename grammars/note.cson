@@ -10,6 +10,27 @@
 
 'patterns': [ # An array of individual pattern declarations.
   {
+    'match': '(DUE)\\s*([^a-z]*)\n'
+    'name': 'due.item'
+    'captures':
+      '1': 'name': 'due_key.note'
+      '2': 'name': 'due_date_value.note'
+  },
+  {
+    'match': '(Sumit DUE)\\s*([^a-z]*)\n'
+    'name': 'sumit_due.item'
+    'captures':
+      '1': 'name': 'sumit_due_key.note'
+      '2': 'name': 'sumit_due_date_value.note'
+  },
+  {
+    'match': '(Done)-([^\a-z\n\)]*)'
+    'name': 'done.item'
+    'captures':
+      '1': 'name': 'done_key.note'
+      '2': 'name': 'done_date_value.note'
+  },
+  {
     'match': '(DATE):\\s*([^\\n]*)'
     'name': 'date.note'
     'captures':
