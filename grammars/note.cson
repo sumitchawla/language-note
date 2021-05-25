@@ -10,6 +10,42 @@
 
 'patterns': [ # An array of individual pattern declarations.
   {
+    'match': '^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$'
+    'name': 'url.item'
+    'captures':
+      '1': 'name': 'url.note'
+  },
+  {
+    'match': '^([0-9/]*)\:(.*)\n'
+    'name': 'meeting_date.item'
+    'captures':
+      '1': 'name': 'meeting_date.note'
+  },
+  {
+    'match': '(Attendees)'
+    'name': 'attendees.note'
+    'captures':
+      '1': 'name': 'attendees.note'
+  },
+  {
+    'match': '(CC)'
+    'name': 'cc.note'
+    'captures':
+      '1': 'name': 'cc.note'
+  },
+  {
+    'match': '(Meeting Notes)'
+    'name': 'meeting_notes.note'
+    'captures':
+      '1': 'name': 'meeting_notes.note'
+  },
+  {
+    'match': '(Discussed)'
+    'name': 'discussed.note'
+    'captures':
+      '1': 'name': 'discussed.note'
+  },
+  {
     'match': '(DUE)\\s*([^a-z]*)\n'
     'name': 'due.item'
     'captures':
@@ -36,56 +72,55 @@
     'captures':
       '1': 'name': 'section_key.note'
       '2': 'name': 'date_value.note'
-  }
+  },
   {
     'match': '(HOURS):\\s*([^\\n]*)'
     'name': 'hours.note'
     'captures':
       '1': 'name': 'section_key.note'
       '2': 'name': 'hours_value.note'
-  }
+  },
   {
     'match': '(INCIDENT):\\s*([^\\n]*)'
     'name': 'incident.note'
     'captures':
       '1': 'name': 'section_key.note'
       '2': 'name': 'incident_value.note'
-  }
+  },
   {
     'match': '(INFO):\\s*([^\\n]*)'
     'name': 'info.note'
     'captures':
       '1': 'name': 'section_key.note'
       '2': 'name': 'info_value.note'
-  }
+  },
   {
-    'match': '(MEETING):\\s*([^\\n]*)'
-    'name': 'hours.note'
+    'match': '(Action Items)'
+    'name': 'action_items.note'
     'captures':
-      '1': 'name': 'section_key.note'
-      '2': 'name': 'meeting_value.note'
-  }
+      '1': 'name': 'action_items.note'
+  },
   {
     'match': '(TAGS):\\s*([^\\n]*)'
     'name': 'tags.note'
     'captures':
       '1': 'name': 'section_key.note'
       '2': 'name': 'tags_value.note'
-  }
+  },
   {
     'match': '(TASK):\\s*([^\\n]*)'
     'name': 'task.note'
     'captures':
       '1': 'name': 'section_key.note'
       '2': 'name': 'task_value.note'
-  }
+  },
   {
     'match': '(TODO):\\s*([^\\n]*)'
     'name': 'todo.note'
     'captures':
       '1': 'name': 'section_key.note'
       '2': 'name': 'todo_value.note'
-  }
+  },
   {
     'match': '(CHECK):\\s*(.*)\\s+((INCOMPLETE)|(COMPLETE))$'
     'name': 'check.note'
